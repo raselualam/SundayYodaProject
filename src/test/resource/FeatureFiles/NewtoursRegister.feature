@@ -14,3 +14,4 @@ Scenario Outline: User should able to create account using Register
 		|Sam 	    |	Test123		|
 #		|David		|	Negative	|
 #		|Jack			|	Boundary	|
+#   |Git			| Branching |
