@@ -28,6 +28,7 @@ public class NewtoursRegisterSteps {
 
 	@When("^Fill form with some basic information$")
 	public void fill_form_with_some_basic_information() throws Throwable {
+		NewtoursRegisterPageActionsObj.adpopup();
 		NewtoursRegisterPageActionsObj.fillContactInfo();
 		NewtoursRegisterPageActionsObj.fillMailingInfo();
 	}

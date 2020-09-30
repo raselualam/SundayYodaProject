@@ -31,12 +31,12 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">11.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Default test</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">1</td><td class="numi">17.3 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
-<tr><th colspan="4">Default test &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="1">bdd.runners.RunnerClass</td><td><a href="#m1"><b>feature</b> (cucumber) ("Runs Cucumber Feature")</a></td><td class="numi">1</td><td>1594573187054</td><td class="numi">9942</td></tr>
+<tr><th colspan="4">Default test &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">bdd.runners.RunnerClass</td><td><a href="#m1"><b>feature</b> (cucumber) ("Runs Cucumber Feature")</a></td><td class="numi">1</td><td>1597589818340</td><td class="numi">15514</td></tr>
 </table>
 <h1>Default test</h1>
 <h2 id="m1">bdd.runners.RunnerClass:feature</h2>
@@ -44,6 +44,172 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <tr class="param"><th>Parameter #1</th></tr>
 <tr class="param stripe"><td>Users ability to create account</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="1">
+<p>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.125)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-320Q1I8&apos;, ip: &apos;192.168.221.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E89563+2725219]
+	Ordinal0 [0x00D88551+1672529]
+	Ordinal0 [0x00C70202+524802]
+	Ordinal0 [0x00C699B2+498098]
+	Ordinal0 [0x00C6A09B+499867]
+	Ordinal0 [0x00C6AFF5+503797]
+	Ordinal0 [0x00C66994+485780]
+	Ordinal0 [0x00C70FF0+528368]
+	Ordinal0 [0x00C1D6C9+186057]
+	Ordinal0 [0x00C1CA3D+182845]
+	Ordinal0 [0x00C1A94B+174411]
+	Ordinal0 [0x00C02528+75048]
+	Ordinal0 [0x00C035A0+79264]
+	Ordinal0 [0x00C03539+79161]
+	Ordinal0 [0x00D9D607+1758727]
+	GetHandleVerifier [0x00FA6546+1050150]
+	GetHandleVerifier [0x00FA6291+1049457]
+	GetHandleVerifier [0x00FB10D7+1094071]
+	GetHandleVerifier [0x00FA6B46+1051686]
+	Ordinal0 [0x00D95B06+1727238]
+	Ordinal0 [0x00D9EB7B+1764219]
+	Ordinal0 [0x00D9ECE3+1764579]
+	Ordinal0 [0x00DB4C05+1854469]
+	BaseThreadInitThunk [0x75186359+25]
+	RtlGetAppContainerNamedObjectPath [0x77287C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77287BF4+180]
+</p>
+cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:69)
+<br/>at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+<p>Caused by session not created
+from chrome not reachable
+  (Session info: chrome=84.0.4147.125)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;DESKTOP-320Q1I8&apos;, ip: &apos;192.168.221.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_241&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00E89563+2725219]
+	Ordinal0 [0x00D88551+1672529]
+	Ordinal0 [0x00C70202+524802]
+	Ordinal0 [0x00C699B2+498098]
+	Ordinal0 [0x00C6A09B+499867]
+	Ordinal0 [0x00C6AFF5+503797]
+	Ordinal0 [0x00C66994+485780]
+	Ordinal0 [0x00C70FF0+528368]
+	Ordinal0 [0x00C1D6C9+186057]
+	Ordinal0 [0x00C1CA3D+182845]
+	Ordinal0 [0x00C1A94B+174411]
+	Ordinal0 [0x00C02528+75048]
+	Ordinal0 [0x00C035A0+79264]
+	Ordinal0 [0x00C03539+79161]
+	Ordinal0 [0x00D9D607+1758727]
+	GetHandleVerifier [0x00FA6546+1050150]
+	GetHandleVerifier [0x00FA6291+1049457]
+	GetHandleVerifier [0x00FB10D7+1094071]
+	GetHandleVerifier [0x00FA6B46+1051686]
+	Ordinal0 [0x00D95B06+1727238]
+	Ordinal0 [0x00D9EB7B+1764219]
+	Ordinal0 [0x00D9ECE3+1764579]
+	Ordinal0 [0x00DB4C05+1854469]
+	BaseThreadInitThunk [0x75186359+25]
+	RtlGetAppContainerNamedObjectPath [0x77287C24+228]
+	RtlGetAppContainerNamedObjectPath [0x77287BF4+180]
+</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+<br/>at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+<br/>at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+<br/>at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br/>at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+<br/>at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:499)
+<br/>at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:486)
+<br/>at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:472)
+<br/>at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+<br/>at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br/>at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+<br/>at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+<br/>at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:207)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+<br/>at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+<br/>at bdd.utilities.SetupDrivers.setupDriver(SetupDrivers.java:20)
+<br/>at bdd.utilities.BeforeActions.beforeActions(BeforeActions.java:12)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at cucumber.runtime.Utils$1.call(Utils.java:37)
+<br/>at cucumber.runtime.Timeout.timeout(Timeout.java:13)
+<br/>at cucumber.runtime.Utils.invoke(Utils.java:31)
+<br/>at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+<br/>at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)
+<br/>at cucumber.runtime.Runtime.runHooks(Runtime.java:211)
+<br/>at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:201)
+<br/>at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+<br/>at cucumber.runtime.model.CucumberScenarioOutline.run(CucumberScenarioOutline.java:46)
+<br/>at cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)
+<br/>at cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)
+<br/>at cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br/>at java.lang.reflect.Method.invoke(Method.java:498)
+<br/>at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+<br/>at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+<br/>at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+<br/>at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+<br/>at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+<br/>at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+<br/>at org.testng.TestRunner.privateRun(TestRunner.java:767)
+<br/>at org.testng.TestRunner.run(TestRunner.java:617)
+<br/>at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+<br/>at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+<br/>at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+<br/>at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+<br/>at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br/>at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br/>at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+<br/>at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+<br/>at org.testng.TestNG.run(TestNG.java:1031)
+<br/>at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+<br/>at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br/>at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br/>1 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 </body></html>

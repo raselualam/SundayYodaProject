@@ -47,5 +47,9 @@ public class NewtoursRegisterPageLocators {
 
 	@FindBy(xpath="//input[@name='submit']")
 	public WebElement lnkSubmit;
+	
+	@FindBy(xpath="//iframe[@id='flow_close_btn_iframe']")
+	public WebElement popupAd;
+	
 
 }

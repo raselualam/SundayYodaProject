@@ -23,6 +23,10 @@ public class NewtoursRegisterPageActions {
 		PageFactory.initElements(SetupDrivers.driver, NewtoursRegisterPageLocatorsObj);
 	}
 
+	public void adpopup(){
+		   NewtoursRegisterPageLocatorsObj.popupAd.click();
+	}
+	
 	public void fillContactInfo() throws Exception{
 		NewtoursRegisterPageLocatorsObj.txtFirstName.clear();
 		NewtoursRegisterPageLocatorsObj.txtFirstName.sendKeys(ReadExcelSheetData.getMapData("FirstName"));
